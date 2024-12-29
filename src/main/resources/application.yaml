@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:sqlserver://localhost:1433;databaseName=product;integratedSecurity=true
-    username: ""
-    password: ""
+    url: jdbc:sqlserver://localhost:1433;databaseName=product-management;encrypt=false
+    username: alten
+    password: alten
   jpa:
     hibernate:
       ddl-auto: update
@@ -10,3 +10,5 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.SQLServerDialect
+  jwt:
+    secret-key: alten-secret-key
